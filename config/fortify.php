@@ -72,7 +72,7 @@ return [
     | and the user is authenticated. You are free to change this value.
     |
     */
-
+    ## Changes
     'home' => '/product', // redirect to index from products folder in view
 
     /*

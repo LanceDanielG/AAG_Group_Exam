@@ -1,66 +1,56 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## About The Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel Test by AAG Group as part of Hiring Process. Below are the
+instructions given for the test and information about the Cognitive
+Examination / Technical Exam:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- create a new Laravel project using the latest stable version of Laravel.
+- Within the Laravel project, implement a sample CRUD (Create, Read, Update, Delete) functionality.
+- In the same Laravel project, integrate the Authentication (Auth) system. The Auth system should encompass essential features such as user registration, login, logout, and password reset.
+- Once you've successfully completed the CRUD and Auth implementation, upload the entire Laravel project to a Git or Bitbucket repository of your preference.
+- In your submission, provide clear instructions on how to run the Laravel project locally. Additionally, include detailed steps on how to access the Git/Bitbucket repository that houses your Laravel project.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+I have used Laravel 11 in the Exam. Laravel Jetstream as Starter Kit for implementing login, registration and password reset.
 
-## Learning Laravel
+## Prerequisite
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+PHP: Laravel applications require PHP. Laravel 11.x requires a minimum PHP version of 8.2.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Database: Laravel supports various database systems, including MySQL, PostgreSQL, SQLite, and SQL Server. You'll need to have your chosen database system installed and running.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Composer: Laravel utilizes Composer for dependency management. Composer is a PHP package manager that manages the dependencies required by your Laravel application and installs them into your project's vendor directory.
 
-## Laravel Sponsors
+Node.js & NPM
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Step by step Set Up from Scratch
 
-### Premium Partners
+- composer create-project laravel/laravel project-name
+- cd project-name
+- Set up .env file app name and database 
+- Create sqlite file in main directory of project
+- Run php artisan migrate 
+- composer require laravel/jetstream
+- php artisan jetstream:install livewire
+- Set up .env Laravel Mail
+- Create model for products and migrate
+- Create controller for products
+- Setup routes 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Step by Step Intallation of Repository to Local Machine
 
-## Contributing
+- **[Install PHP in your Local Machine](https://www.php.net/downloads.php)**
+- **[Install Composer in your Local Machine](https://getcomposer.org/download/)**
+- **[Install Node.js if Necessary(Optional)](https://nodejs.org/en/download/)**
+- **[Install Git on your local machine(Optional)](https://git-scm.com/downloads)**
+- Open terminal in the project directory
+- Clone the Repository using git clone <repository_url> command
+- Run cd <project_directory> in terminal
+- Run composer install
+- Run npm install command
+- create new .env file using .env.example as reference
+- Run php artisan migrate command to create tables
+- Finally, Run php artisan serve
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

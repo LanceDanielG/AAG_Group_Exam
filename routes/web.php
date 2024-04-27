@@ -17,8 +17,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
-Route::get('/product', [ProductController::class, 'index'])->name('product.index');
+// uses method reference For example, [ProductController::class, 'index']
+Route::get('/product', [ProductController::class, 'index'])->name('product.index'); //generate URLs and redirects using route names
 Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
 Route::post('/product', [ProductController::class, 'add'])->name('product.add');
 Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
