@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'home' => '/dashboard',
+    'home' => '/product', // redirect to index from products folder in view
 
     /*
     |--------------------------------------------------------------------------
